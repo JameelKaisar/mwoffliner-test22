@@ -1,0 +1,26 @@
+{
+  "name": "mwoffliner-test22",
+  "version": "1.0.0",
+  "description": "mwoffliner test 22",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JameelKaisar/mwoffliner-test22.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Abdul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JameelKaisar/mwoffliner-test22/issues"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "5.0.5"
+  },
+  "homepage": "https://github.com/JameelKaisar/mwoffliner-test22#readme"
+}
