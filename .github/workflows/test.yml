@@ -6,10 +6,7 @@ on:
     branches:
       - main
       - master
-  workflow_call:
-    secrets:
-      NODE_AUTH_TOKEN:
-        required: true
+  workflow_call
 
 jobs:
   build:
