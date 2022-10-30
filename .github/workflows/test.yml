@@ -1,16 +1,13 @@
 name: Publish to npmjs.com
+
 on:
+  pull_request:
   push:
-    tags:
-      - v*
     branches:
       - main
       - master
 
 jobs:
-  call-workflow:
-    - uses: openzim/mwoffliner/.github/workflows/test.yml@master
-
   build:
     runs-on: ubuntu-22.04
 
@@ -22,6 +19,4 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm test
