@@ -9,8 +9,8 @@ on:
       - master
 
 jobs:
-  call-workflow:
-    - uses: JameelKaisar/mwoffliner-test22/.github/workflows/test.yml@master
+  # call-workflow:
+  #   - uses: JameelKaisar/mwoffliner-test22/.github/workflows/test.yml@master
 
   build:
     runs-on: ubuntu-22.04
