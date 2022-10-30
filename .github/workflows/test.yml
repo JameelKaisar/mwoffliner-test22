@@ -1,4 +1,4 @@
-name: Publish to npmjs.com
+name: Test package
 
 on:
   pull_request:
