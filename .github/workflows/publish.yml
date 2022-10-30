@@ -10,9 +10,10 @@ on:
 
 jobs:
   call-workflow:
-    - uses: JameelKaisar/mwoffliner-test22/.github/workflows/test.yml@master
-      # secrets:
-      #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    # - uses: JameelKaisar/mwoffliner-test22/.github/workflows/test.yml@master
+    - uses: ./.github/workflows/test.yml@master
+      secrets:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   build:
     runs-on: ubuntu-22.04
