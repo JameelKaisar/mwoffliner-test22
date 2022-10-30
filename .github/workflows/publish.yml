@@ -9,7 +9,7 @@ on:
 
 jobs:
   call-workflow:
-    - uses: openzim/mwoffliner/.github/workflows/test.yml@master
+    - uses: JameelKaisar/mwoffliner-test22/.github/workflows/test.yml@master
 
   build:
     runs-on: ubuntu-22.04
