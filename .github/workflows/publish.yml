@@ -26,8 +26,7 @@ jobs:
 
       - name: Exit if not on master branch
         if: endsWith(github.event.base_ref, '/master') == false
-        run: echo "Please push the tag on master branch"
-        run: exit -1
+        run: echo "Please push the tag on master branch" && exit -1
 
       - run: npm ci
       - run: npm publish
