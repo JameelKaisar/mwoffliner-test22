@@ -25,7 +25,7 @@ jobs:
       - run: echo ${{ github.event.base_ref }}
 
       - name: Exit if not on master branch
-        if: endsWith(github.ref, 'master') == false
+        if: endsWith(github.event.base_ref, 'master') == false
         run: exit -1
 
       - run: npm ci
