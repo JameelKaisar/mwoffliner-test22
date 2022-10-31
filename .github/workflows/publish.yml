@@ -20,6 +20,15 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       
+      - run: echo ${{ github.ref }}
+      - run: echo ${github.ref}
+
+      - run: echo ${{ github.event }}
+      - run: echo ${ github.event }
+
+      - run: echo ${{ github.event.base_ref }}
+      - run: echo ${github.event.base_ref}
+
       - name: Exit if not on master branch
         if: endsWith(github.ref, 'master') == false
         run: exit -1
